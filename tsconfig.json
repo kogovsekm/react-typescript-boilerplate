@@ -13,14 +13,20 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,      
+    "noImplicitReturns": true,   
+    "strictNullChecks": true,   
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true, 
   },
   "include": [
     "src"
-  ]
+  ],
+  "exclude": ["node_modules", "build"]
 }

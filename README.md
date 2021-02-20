@@ -1,6 +1,18 @@
 # Getting Started with Create React App
 
+React - Typescript boilerplate is focusing on providing a strict set of linting and formatting rules by extending the existing .eslint config.
+It is also using LESS for styling instead of normal css (it can be pretty straight forward to use sass instead by setting up node-sass watcher instead of less-watcher).
+The less-watcher config is already included at the root of the project and runs along with hot-reload.
+App.tsx already includes contexts for Chakra UI components as well as Recoil for state management.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## tl;dr
+
+This is basically a create-react-app (typescript template) with some useful addons to make your work a bit easier. If you need a react - typescript boilerplate to get started quickly, then perhaps
+this will be of some use for you. As stated above, the main focus is on eslint and prettier setup. 
+
+**Note: This project comes directly from create-react-app and was not yet `ejected`. If you wish to `eject` then see command below!**
 
 ## Available Scripts
 
@@ -39,8 +51,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `yarn lint`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Runs the ESLint and displays any warnings and / or errors.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `yarn format`
+
+Runs the Prettier plugin in an attempt to format all files.
