@@ -7,7 +7,6 @@
     "@typescript-eslint/eslint-plugin": "4.14.2",
     "@typescript-eslint/parser": "4.14.2",
     "babel-eslint": "10.1.0",
-    "concurrently": "^5.3.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-airbnb-typescript": "12.3.1",
     "eslint-config-prettier": "7.2.0",
@@ -44,8 +43,7 @@
     "framer-motion": "^3.5.3",
     "history": "^4.10.1",
     "i18next": "^19.8.9",
-    "less": "^4.1.1",
-    "less-watch-compiler": "^1.14.6",
+    "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-i18next": "^11.8.7",
@@ -58,12 +56,11 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "concurrently --kill-others \"less-watch-compiler --config less-watcher.config.json\" \"react-scripts start\"",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
-    "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'"
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color"
   },
   "eslintConfig": {
     "extends": [

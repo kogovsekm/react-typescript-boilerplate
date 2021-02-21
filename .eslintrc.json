@@ -115,6 +115,7 @@
       "exports": "only-multiline",
       "functions": "never"
     }],
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
+    "space-before-function-paren": 1
   }
 }
