@@ -4,7 +4,7 @@ import { RecoilRoot } from 'recoil';
 import logo from './logo.svg';
 import './App.scss';
 
-function App(): JSX.Element {
+function App (): JSX.Element {
   return (
     <div className="App">
       <RecoilRoot>

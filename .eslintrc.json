@@ -4,11 +4,7 @@
     "airbnb-typescript",
     "airbnb/hooks",
     "plugin:@typescript-eslint/recommended",
-    "plugin:jest/recommended",
-    "prettier",
-    "prettier/react",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
+    "plugin:jest/recommended"
   ],
   "plugins": ["react", "@typescript-eslint", "jest"],
   "env": {
@@ -44,13 +40,6 @@
     ],
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto",
-        "singleQuote": true
-      }
-    ],
     "object-curly-spacing": ["warn", "always"],
     "no-unused-vars": [
       "warn",
@@ -116,6 +105,15 @@
       "functions": "never"
     }],
     "quotes": ["error", "single"],
-    "space-before-function-paren": 1
+    "space-before-function-paren": ["error", {
+        "anonymous": "always",
+        "named": "always",
+        "asyncArrow": "always"
+    }],
+    "@typescript-eslint/space-before-function-paren": ["error", {
+      "anonymous": "always",
+      "named": "always",
+      "asyncArrow": "always"
+    }]
   }
 }
