@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-**IMPORTANT** This project is considered deprecated and superseded by Vite solutions out there. Thanks for any usages.
+**IMPORTANT**: This project is considered deprecated and superseded by Vite solutions out there. Thanks for any usages.
 
 React - Typescript boilerplate is focusing on providing a strict set of linting and formatting rules by extending the existing .eslint config.
 For styling purposes, node-sass packagage has been added to the project so .scss files can be used.
